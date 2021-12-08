@@ -1,17 +1,16 @@
 export function renderElephant(elephantData){
     const div = document.createElement('div');
     const p = document.createElement('p');
-    const img = document.createElement('img');
-
+    
     div.classList.add('elephant');
+
+    div.style.fontSize = `${elephantData.age}rem`
 
     div.style.backgroundColor = elephantData.color;
 
-    p.textContent = elephantData.name;
-
-    img.src = elephantData.image_url;
-
-    div.append(p, img);
+    p.textContent = `${elephantData.name} ${elephantData.birthPlace}`;
+  
+    div.append(p);
     
     return div;
 }
