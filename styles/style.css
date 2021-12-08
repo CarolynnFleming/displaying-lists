@@ -92,22 +92,61 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-  
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+
+#colors-list {
+    display: flex;
+}
+
+.color {
+border: solid 1px  blue;
+padding: 10px;
+background-color: mediumseagreen;
+border-radius: 5px;
+}
+
+#elephants-list {
+    display: flex;
+}
+
+.elephant {
+text-align: center;
+margin-top: 10px;
+border: solid 1px red;
+background-color: lightskyblue;
+padding: 10px;
+border-radius: 5px;
+}
+#celebrity-list {
     }
-
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+    .celebrity {
+        border: solid 1px pink;
+        background-color: hotpink;
+        min-width: 500px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        align-items: center;
     }
-
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
-
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+    .celebrity .best-friend {
+        border: dotted 1px fuchsia;
+        background-color: green;
+        width: 80%;
+        margin: 20px;
     }
-
-  }
+    .celebrity p {
+        font-size: 2rem;
+    }
+.textMessages {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px blueviolet;
+    margin: 20px;
+    padding: 20px;
+}
+.textMessage .reply {
+    margin: 5px;
+    align-self: flex-end;
+    background-color: orange;
+    width:fit-content;
+}

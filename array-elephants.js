@@ -1,8 +1,17 @@
-import{elephants} from './elephants.js'
-import{renderElephants} from './render-elephants.js'
-const elephantsEl = document.getElementById('elephants-list');
-
-for (let elephant of elephants) {
-    const elephantEl = renderElephant(elephant);
-    elephantsEl.append(elephantEl);
-}
+export const elephants = [
+    { 
+        name: 'tiki',
+        age: 2,
+        birthPlace: 'Tanzinia',
+    },
+    {
+        name: 'reshi',
+        age: 3,
+        birthPlace: 'SouthAfrica',
+    },
+    {
+        name: 'coconut',
+        age: 4,
+        birthPlace: 'IvoryCoast',
+    }
+    ];
