@@ -1,4 +1,15 @@
 // import functions and grab DOM elements
+import { renderColor } from './render-colors.js';
+import { colors } from './array-colors.js';
+//console.log(colors)
+const colorsEl = document.getElementById('colors-list');
+
+// for(let color of colors) {
+  //console.log(color)
+    const colorEl = renderColor(colors);
+    colorsEl.append(colorEl);
+    
+// };
 
 // initialize global state
 
