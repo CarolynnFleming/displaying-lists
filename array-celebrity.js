@@ -4,7 +4,7 @@ export const celebritys = [
         age: 26,
         bestFriend: {
             name: 'Cardi B',
-        type: 'fellow rapper'
+            type: 'fellow rapper'
         }
     },
     {
@@ -13,7 +13,7 @@ export const celebritys = [
         bestFriend: {
             name: 'Kendal Jenner',
             type: 'sister'
-        }
+        } 
     },
     {
         name: 'Jennifer Lopez',
